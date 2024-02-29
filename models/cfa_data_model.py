@@ -36,7 +36,7 @@ class CFADataModel(BaseModel):
   def level_validator(cls, v):
     ''' check level digits '''
     if v:
-      reg_pattern=r'\d{1,2}'
+      reg_pattern=r'\d{1}$'
       if not re.match(reg_pattern, str(v)):
         raise ValueError('Level not in range')
       return v
@@ -49,6 +49,6 @@ class CFADataModel(BaseModel):
       if not validate_string_spaces(v):
         raise ValueError('Unwanted spaces in the string')
       if not Validate_string_line_space_char(v):
-        raise 
+        raise ValueError('Unwanted line space character') 
       return v
 

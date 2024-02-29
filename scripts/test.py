@@ -30,3 +30,6 @@ try:
     print("Function executed successfully:", result)
 except RuntimeError as e:
     print(e)
+
+for error in e.errors():
+    print(error['loc'], error['msg'])

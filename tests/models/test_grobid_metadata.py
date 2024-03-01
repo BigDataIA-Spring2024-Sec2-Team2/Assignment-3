@@ -1,6 +1,6 @@
 from unittest import TestCase
 from parameterized import parameterized
-from metadata_data_model import PDFValidationClass  
+from models_py.metadata_data_model import PDFValidationClass  
 
 # Dummy data
 data = {
@@ -33,12 +33,7 @@ class PDFValidationClassTestCase(TestCase):
     @parameterized.expand([
         (data,),
         (data_no_para,),
-        (data_no_bboxes,),
-        (data_no_pages,),
-        (data_no_section_title,),
-        (data_no_section_number,),
-        (data_no_paper_title,),
-        (data_no_file_path,),
+        (data_no_text,),
     ])
     def test_model_creation_correct_data(self, data):
         ''' test model creation with correct data (some optional fields missing) '''
@@ -46,7 +41,12 @@ class PDFValidationClassTestCase(TestCase):
         self.assertIsNotNone(validate_res)
 
     @parameterized.expand([
-        (data_no_text,),
+        (data_no_file_path,),
+        (data_no_bboxes,),
+        (data_no_pages,),
+        (data_no_section_title,),
+        (data_no_section_number,),
+        (data_no_paper_title,),
     ])
     def test_model_creation_incorrect_data(self, data):
         ''' test model creation with missing mandatory data '''

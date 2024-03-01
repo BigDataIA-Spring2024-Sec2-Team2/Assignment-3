@@ -1,22 +1,25 @@
 from pydantic import BaseModel, Field, field_validator
+from typing import Optional
 import re
-from utils.string_validation_util import validate_string_spaces, Validate_string_line_space_char
+from utils.string_validation_util import validate_string_spaces, Validate_string_line_space_char, Validate_topic_test_rr
 
 class CFADataModel(BaseModel):
   topic: str
-  year: int = Field(default = None)
+  year: Optional[int] = Field(default = None)
   level: int
-  introductionSummary: str = Field(default = None)
-  learningOutcomes: str = Field(default = None)
-  summary: str = Field(default = None)
+  introductionSummary: Optional[str] = Field(default = None)
+  learningOutcomes: Optional[str] = Field(default = None)
+  summary: Optional[str] = Field(default = None)
   summaryPageLink: str = Field(pattern=r'^https:\/\/www\.cfainstitute\.org\/.*')
-  pdfFileLink: str = Field(default = None, pattern=r'^https://www\.cfainstitute\.org/-/media/documents/protected/.*\.pdf$')
+  pdfFileLink: Optional[str] = Field(default = None, pattern=r'^https://www\.cfainstitute\.org/-/media/documents/protected/.*\.pdf$')
 
   @field_validator("topic")
   @classmethod
   def topic_validator(cls, v):
     ''' check spaces in topic '''
     if v:
+      if not Validate_topic_test_rr(v):
+        raise ValueError("Test RR page")
       if not validate_string_spaces(v):
         raise ValueError('Unwanted spaces in the string')
       return v.title()
@@ -36,7 +39,7 @@ class CFADataModel(BaseModel):
   def level_validator(cls, v):
     ''' check level digits '''
     if v:
-      reg_pattern=r'\d{1}$'
+      reg_pattern=r'^[123]$'
       if not re.match(reg_pattern, str(v)):
         raise ValueError('Level not in range')
       return v
@@ -51,4 +54,3 @@ class CFADataModel(BaseModel):
       if not Validate_string_line_space_char(v):
         raise ValueError('Unwanted line space character') 
       return v
-

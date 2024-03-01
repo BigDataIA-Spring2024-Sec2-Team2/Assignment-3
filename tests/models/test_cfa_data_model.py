@@ -62,7 +62,7 @@ class CFADataModelTestClass(TestCase):
 
   def test_model_creation_incorrect_level_range_data(self):
     ''' test model creation with incorrect level data '''
-    self.data["level"] = 123
+    self.data["level"] = 4
     with self.assertRaises(ValueError) as err:
       CFADataModel.model_validate(self.data)
     self.assertIn("level", str(err.exception))

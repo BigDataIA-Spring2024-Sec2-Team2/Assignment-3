@@ -1,7 +1,7 @@
 from unittest import TestCase
 from parameterized import parameterized
 
-from models.cfa_data_model import CFADataModel
+from models_py.cfa_data_model import CFADataModel
 
 # dummy data
 data = {

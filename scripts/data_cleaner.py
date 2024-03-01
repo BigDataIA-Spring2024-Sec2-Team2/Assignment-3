@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from models.cfa_data_model import CFADataModel
-from models.pdf_data_model import PDFDataModel
+from models_py.cfa_data_model import CFADataModel
+from models_py.pdf_data_model import PDFDataModel
 from scripts.custom_logger import customLogger
 from utils.data_cleaner_util import convertRomanToInt, csv_to_model_map
 import re

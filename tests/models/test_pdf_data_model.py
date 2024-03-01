@@ -1,7 +1,7 @@
 from unittest import TestCase
 from parameterized import parameterized
 
-from models.pdf_data_model import PDFDataModel
+from models_py.pdf_data_model import PDFDataModel
 
 # dummy data
 data = {

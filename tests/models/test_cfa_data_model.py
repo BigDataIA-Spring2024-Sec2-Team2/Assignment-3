@@ -90,7 +90,7 @@ class CFADataModelTestClass(TestCase):
     
   def test_model_creation_incorrect_learning_data(self):
     ''' test model creation with incorrrect learning (wrong data) '''
-    self.data["learningOutcomes"] = "has \n in the string"
+    self.data["learningOutcomes"] = "has\nin the string"
     with self.assertRaises(ValueError) as err:
       CFADataModel.model_validate(self.data)
     self.assertIn("Unwanted line space character", str(err.exception))

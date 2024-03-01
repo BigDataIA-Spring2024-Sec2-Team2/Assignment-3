@@ -1,7 +1,7 @@
 # Assignment-3
 
 ## Live application Links
-[![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6)
+[![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://codelabs-preview.appspot.com/?file_id=1vkNzPBXibaYNVNK3z4BwVSpV7XNYXeLTjbUcQXptyOI#0)
 
 
 
@@ -33,10 +33,25 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 
 ## Project run outline
 
-1. 
-2.
+### 1. CFA Data - Cleaning, Validation, Testing
 
-CodeLab - [Documentation]([https://docs.google.com/document/d/1dZdiE4i6tSN4ORSth-93WU_VrgvxRuWhSNYANm2L1e4/edit#heading=h.30zowzpo6ptm](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6)https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
+- 
+- 
+
+### 2. PDF Data - Extraction to Structured Schema, Metadata Extraction, Cleaning, Validation, Testing
+- Extract the pdf contents from Grobid output and store it in a structured schema
+- Extract the metadata from Grobid using Langchain and strore it in a structured schema
+- Perform Validation using Pydantic and Testing
+- Additionally, Extraction of pdf contens from Pypdf output to a structured schema has been done
+  
+### 3. SnowFlake
+- 
+
+### 4. DBT
+- 
+- 
+
+CodeLab - [Documentation]([https://codelabs-preview.appspot.com/?file_id=1vkNzPBXibaYNVNK3z4BwVSpV7XNYXeLTjbUcQXptyOI#0])
 
 ## References
 

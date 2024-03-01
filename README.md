@@ -4,7 +4,6 @@
 [![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://codelabs-preview.appspot.com/?file_id=1vkNzPBXibaYNVNK3z4BwVSpV7XNYXeLTjbUcQXptyOI#0)
 
 
-
 ## Problem Statement
 Design Python classes for web page and Grobid output schemas, validating data with Pydantic and creating "clean" CSV files. Utilize DBT with Snowflake to load clean data, construct a summary table, and deploy the model with testing. Establish Test and Production Environments in Snowflake, considering necessary considerations for deployment.
 
@@ -27,22 +26,25 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 3. DBT Cloud Knowledge
 
 
-## How to run Application locally (**To be filled**)
+## How to run Application locally 
 1. Create Python virtual environment
 2. run -> pip install -r requirements.txt
 3. load Jupyter Notebook
 5. run local image of Grobid
 6. run the Jupyter notebooks present under the notebooks directory
-7. next run 
-8. then run 
-9. finally run 
+7. In terminal - export PYTHONPATH=.
+8. run data_cleaner.py under scripts
+9. Run snowflake upload to upload data
+10. Run DBT sql models to run
+11. Deploy, test - for test env, prod for production environment
+12. In the snowflake outputs will be visible under ASSIGNMENT3, test and prod schema
 
 ## Project run outline
 
 ### 1. CFA Data - Cleaning, Validation, Testing
-
-- 
-- 
+- Created pydantic class in order to validate data
+- Pytest to test the class with covering edge cases
+- Claeaning test to run raw data to validate using Pydantic
 
 ### 2. PDF Data - Extraction to Structured Schema, Metadata Extraction, Cleaning, Validation, Testing
 - Extract the pdf contents from Grobid output and store it in a structured schema
@@ -51,11 +53,14 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 - Additionally, Extraction of pdf contens from Pypdf output to a structured schema has been done
   
 ### 3. SnowFlake
-- 
+- From the CSV data files created snowflake databases SQLAlchemy
+- Creted separate DBs for test and prod deployment output
 
 ### 4. DBT
-- 
-- 
+- Connection of snowflake with dbt
+- Creation of models for asked schema
+- Generated test
+- Deployed to test and prod
 
 CodeLab - [Documentation](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
 
@@ -71,13 +76,11 @@ CodeLab - [Documentation](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4N
 - https://app.snowflake.com/
 - https://github.com/ashrithagoramane/DAMG7245-Spring24/tree/main/repository_structure
 
-  ## Learning Outcomes
-
   ## Team Information 
   Project Board - https://github.com/orgs/BigDataIA-Spring2024-Sec2-Team2/projects/2/views/1
   
   Name | Contribution %| Contributions |
   --- |--- | --- |
-  Anshul Chaudhary  | | |
-  Agash Uthayasuriyan |  | PDF content Extraction (Grobid, PyPDF), Metadata Extraction, Pydantic Validation|
-  Narayani Arun Patil |  | |
+  Anshul Chaudhary  | 35 % | Classes, Pydantic Models, Pytest, Cleaning , Snowflake and S3|
+  Agash Uthayasuriyan | 35% | PDF content Extraction (Grobid, PyPDF), Metadata Extraction, Pydantic Validation|
+  Narayani Arun Patil | 30% | DBT and snowflake DBs |

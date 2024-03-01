@@ -27,9 +27,15 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 3. DBT Cloud Knowledge
 
 
-## How to run Application locally
-1. 
-2. 
+## How to run Application locally (**To be filled**)
+1. Create Python virtual environment
+2. run -> pip install -r requirements.txt
+3. load Jupyter Notebook
+5. run local image of Grobid
+6. run the Jupyter notebooks present under the notebooks directory
+7. next run 
+8. then run 
+9. finally run 
 
 ## Project run outline
 
@@ -73,5 +79,5 @@ CodeLab - [Documentation](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4N
   Name | Contribution %| Contributions |
   --- |--- | --- |
   Anshul Chaudhary  | | |
-  Agash Uthayasuriyan |  | |
+  Agash Uthayasuriyan |  | PDF content Extraction (Grobid, PyPDF), Metadata Extraction, Pydantic Validation|
   Narayani Arun Patil |  | |

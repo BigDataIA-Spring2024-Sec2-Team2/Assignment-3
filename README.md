@@ -14,7 +14,7 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 ## Technologies Used
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
-[![DBT](https://img.shields.io/badge/AWS-411120?style=for-the-badge)]([https://aws.amazon.com/](https://www.getdbt.com/))
+[![DBT](https://img.shields.io/badge/DBT-861121?style=for-the-badge)](https://www.getdbt.com/)
 [![GROBID](https://img.shields.io/badge/GROBID-FFFFFF?style=for-the-badge&logo=GROBID&logoColor=black)](https://grobid.readthedocs.io/en/latest/Introduction/)
 [![Snowflake](https://img.shields.io/badge/snowflake-0000FF?style=for-the-badge&logo=snowflake&logoColor=white)](https://docs.snowflake.com/ )
 
@@ -33,8 +33,8 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 
 ## Project run outline
 
-### 1. 
-### 2.
+1. 
+2.
 
 CodeLab - [Documentation]([https://docs.google.com/document/d/1dZdiE4i6tSN4ORSth-93WU_VrgvxRuWhSNYANm2L1e4/edit#heading=h.30zowzpo6ptm](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6)https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
 

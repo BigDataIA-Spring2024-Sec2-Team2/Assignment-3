@@ -4,14 +4,14 @@ from models.cfa_data_model import CFADataModel
 from scripts.custom_logger import customLogger
 from utils.data_cleaner_util import convertRomanToInt, csv_to_model_map, model_to_csv_map
 import re
-import os
+import sys
 import logging
 
 
-logger = customLogger('web-scrapping-validation.log')
-if "PYTEST_CURRENT_TEST" in os.environ:
+if 'unittest' in sys.modules.keys():
   logger = logging  
-
+else:
+  logger = customLogger('web-scrapping-validation.log')
 
 def validate_function(model, max_attempts=3, **kwargs):
   ''' function to validate the raw data, and then try to fix the data if any validation is hit '''

@@ -5,15 +5,15 @@ from models.cfa_data_model import CFADataModel
 
 # dummy data
 data = {
-      'topic' : "test topic 1",
-      'year' : "2021",
-      'level' : 2,
-      'introductionSummary' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      'learningOutcomes' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      'summary' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      'summaryPageLink' : "https://www.cfainstitute.org/membership/professional-development/refresher-readings/test-reading-path-1",
-      'pdfFileLink' : "https://www.cfainstitute.org/-/media/documents/protected/refresher-reading/2024/level2/level2a/RR_2024_L2V1R5-1.pdf",
-    }
+  'topic' : "test topic 1",
+  'year' : "2021",
+  'level' : 2,
+  'introductionSummary' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  'learningOutcomes' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  'summary' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  'summaryPageLink' : "https://www.cfainstitute.org/membership/professional-development/refresher-readings/test-reading-path-1",
+  'pdfFileLink' : "https://www.cfainstitute.org/-/media/documents/protected/refresher-reading/2024/level2/level2a/RR_2024_L2V1R5-1.pdf",
+}
 
 data_no_topic = {key: value for key, value in data.items() if key != "topic"}
 data_no_year = {key: value for key, value in data.items() if key != "year"}
@@ -80,6 +80,13 @@ class CFADataModelTestClass(TestCase):
     with self.assertRaises(ValueError) as err:
       CFADataModel.model_validate(self.data)
     self.assertIn("Year not in range", str(err.exception))
+    
+  def test_model_creation_incorrect_year_in_future_data(self):
+    ''' test model creation with incorrrect year (wrong data) '''
+    self.data["year"] = "2098"
+    with self.assertRaises(ValueError) as err:
+      CFADataModel.model_validate(self.data)
+    self.assertIn("Year is in Future", str(err.exception))
     
   def test_model_creation_incorrect_intro_data(self):
     ''' test model creation with incorrrect introduction (wrong data) '''

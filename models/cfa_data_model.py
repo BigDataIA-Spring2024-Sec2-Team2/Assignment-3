@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field, field_validator
 from typing import Optional
+from datetime import datetime
 import re
 from utils.string_validation_util import validate_string_spaces, Validate_string_line_space_char, Validate_topic_test_rr
 
@@ -32,6 +33,8 @@ class CFADataModel(BaseModel):
       reg_pattern=r'^20\d{2}$'
       if not re.match(reg_pattern, str(v)):
         raise ValueError('Year not in range')
+      if v > datetime.now().year:
+        raise ValueError('Year is in Future')
       return v
     
   @field_validator("level")

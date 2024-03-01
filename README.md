@@ -53,3 +53,10 @@ CodeLab - [Documentation]([https://docs.google.com/document/d/1dZdiE4i6tSN4ORSth
   ## Learning Outcomes
 
   ## Team Information 
+  Project Board - https://github.com/orgs/BigDataIA-Spring2024-Sec2-Team2/projects/2/views/1
+  
+  Name | Contribution %| Contributions |
+  --- |--- | --- |
+  Anshul Chaudhary  | | |
+  Agash Uthayasuriyan |  | |
+  Narayani Arun Patil |  | |

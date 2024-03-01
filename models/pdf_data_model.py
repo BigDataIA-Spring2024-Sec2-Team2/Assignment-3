@@ -7,10 +7,10 @@ from utils.string_validation_util import validate_string_spaces, Validate_string
 
 
 class PDFDataModel(BaseModel):
-  topic: str
-  articleName: str
+  topic: Optional[str]
+  articleName:  Optional[str]
   year: Optional[int] = Field(default = None)
-  level: int
+  level:  Optional[int]
   summary: Optional[str] = Field(default = None)
 
   @field_validator("topic")

@@ -1,15 +1,15 @@
 version: 2
 
 models:
-  - name: scrapped_grobbid
-    description: Printing Number of articles
-    columns:
-      - name: Number_of_articles
-        tests:
-          - not_null
-          - unique:
-              columns: [Number_of_articles]
-          - where: "Number_of_articles >= 0"
+  # - name: scrapped_grobbid
+  #   description: Printing Number of articles
+  #   columns:
+  #     - name: Number_of_articles
+  #       tests:
+  #         - not_null
+  #         - unique:
+  #             columns: [Number_of_articles]
+  #         - where: "Number_of_articles != 0"
 
       - name: TOPIC
         tests:

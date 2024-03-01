@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized='table'
+  )
+}}
+
 select 
     b.LEVEL,
     a.TOPIC,

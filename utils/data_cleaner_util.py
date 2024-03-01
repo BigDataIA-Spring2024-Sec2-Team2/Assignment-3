@@ -6,18 +6,9 @@ csv_to_model_map = {
     'LearningOutcomes': 'learningOutcomes',
     'Summary': 'summary',
     'SummaryPageLink': 'summaryPageLink',
-    'PDFFileLink': 'pdfFileLink'
-}
-
-model_to_csv_map = {
-  'topic': 'NameOfTheTopic', 
-  'year': 'Year', 
-  'level': 'Level', 
-  'introductionSummary': 'IntroductionSummary', 
-  'learningOutcomes': 'LearningOutcomes', 
-  'summary': 'Summary', 
-  'summaryPageLink': 'SummaryPageLink', 
-  'pdfFileLink': 'PDFFileLink'
+    'PDFFileLink': 'pdfFileLink',
+    'Article_Name': 'articleName',
+    'Topic': 'topic'
 }
 
 def convertRomanToInt(s):

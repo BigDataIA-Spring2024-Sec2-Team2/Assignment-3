@@ -15,6 +15,8 @@ def Validate_string_line_space_char(v):
   if v:
     if '\n' in v:
       return False
+    if '□' in v:
+      return False
     return True
   
 def Validate_topic_test_rr(v):

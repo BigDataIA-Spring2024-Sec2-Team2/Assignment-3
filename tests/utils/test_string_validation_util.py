@@ -20,6 +20,7 @@ class DataCleanerUtilTestClass(TestCase):
   @parameterized.expand([
     ("test string",True),
     ("test \n string",False),
+    ("test □ string",False),
   ])
   def test_Validate_string_line_space_char(self, string, result):
     ''' test for line space in string '''

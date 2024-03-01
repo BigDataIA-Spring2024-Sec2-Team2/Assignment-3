@@ -51,7 +51,7 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 - 
 - 
 
-CodeLab - [Documentation]([https://codelabs-preview.appspot.com/?file_id=1vkNzPBXibaYNVNK3z4BwVSpV7XNYXeLTjbUcQXptyOI#0])
+CodeLab - [Documentation](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
 
 ## References
 

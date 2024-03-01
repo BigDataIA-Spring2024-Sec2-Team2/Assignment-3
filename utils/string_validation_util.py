@@ -7,7 +7,7 @@ def validate_string_spaces(v):
     end = v.endswith(" ")
     if start or end:
       return False
-    if re.match(r'\s{2,}', v):
+    if re.findall(r'\s{2,}', v):
       return False
   return True
 

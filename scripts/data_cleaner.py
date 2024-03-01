@@ -102,7 +102,7 @@ def cleanDataPDF(csv_path):
 def convertDFtoCSV(df, csv_location):
   ''' function to store DF locally '''
   logger.info("-------Starting Writing to CSV -------")
-  df.to_csv(csv_location, index=False,sep="\t")
+  df.to_csv(csv_location, index=False, sep="\t", float_format='%d')
   logger.info("------- Ending Writing to CSV -------")
   
 if __name__ == '__main__': 

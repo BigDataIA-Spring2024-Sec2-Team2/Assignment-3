@@ -1,7 +1,7 @@
 # Assignment-3
 
 ## Live application Links
-[![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)]([https://codelabs-preview.appspot.com/?file_id=1dZdiE4i6tSN4ORSth-93WU_VrgvxRuWhSNYANm2L1e4#0](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6))
+[![codelabs](https://img.shields.io/badge/codelabs-4285F4?style=for-the-badge&logo=codelabs&logoColor=white)](https://codelabs-preview.appspot.com/?file_id=1vkNzPBXibaYNVNK3z4BwVSpV7XNYXeLTjbUcQXptyOI#0)
 
 
 
@@ -27,16 +27,37 @@ Design and implement Python classes, namely URLClass, MetaDataPDFClass, and Cont
 3. DBT Cloud Knowledge
 
 
-## How to run Application locally
-1. 
-2. 
+## How to run Application locally (**To be filled**)
+1. Create Python virtual environment
+2. run -> pip install -r requirements.txt
+3. load Jupyter Notebook
+5. run local image of Grobid
+6. run the Jupyter notebooks present under the notebooks directory
+7. next run 
+8. then run 
+9. finally run 
 
 ## Project run outline
 
-1. 
-2.
+### 1. CFA Data - Cleaning, Validation, Testing
 
-CodeLab - [Documentation]([https://docs.google.com/document/d/1dZdiE4i6tSN4ORSth-93WU_VrgvxRuWhSNYANm2L1e4/edit#heading=h.30zowzpo6ptm](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6)https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
+- 
+- 
+
+### 2. PDF Data - Extraction to Structured Schema, Metadata Extraction, Cleaning, Validation, Testing
+- Extract the pdf contents from Grobid output and store it in a structured schema
+- Extract the metadata from Grobid using Langchain and strore it in a structured schema
+- Perform Validation using Pydantic and Testing
+- Additionally, Extraction of pdf contens from Pypdf output to a structured schema has been done
+  
+### 3. SnowFlake
+- 
+
+### 4. DBT
+- 
+- 
+
+CodeLab - [Documentation](https://docs.google.com/document/d/1a4kE9iRo0cuh8gUI4NTd2sVjGIwXH5tBalrgW-4uvd0/edit#heading=h.j0flkct7g8l6) 
 
 ## References
 
@@ -53,3 +74,10 @@ CodeLab - [Documentation]([https://docs.google.com/document/d/1dZdiE4i6tSN4ORSth
   ## Learning Outcomes
 
   ## Team Information 
+  Project Board - https://github.com/orgs/BigDataIA-Spring2024-Sec2-Team2/projects/2/views/1
+  
+  Name | Contribution %| Contributions |
+  --- |--- | --- |
+  Anshul Chaudhary  | | |
+  Agash Uthayasuriyan |  | PDF content Extraction (Grobid, PyPDF), Metadata Extraction, Pydantic Validation|
+  Narayani Arun Patil |  | |
